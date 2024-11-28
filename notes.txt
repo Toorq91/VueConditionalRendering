@@ -1,3 +1,20 @@
+v-if: Brukes for å vise et element kun hvis en spesifisert betingelse er sann. 
+Hvis betingelsen er usann, fjernes elementet helt fra DOM-en.
+
+v-else-if: Brukes for å sjekke en alternativ betingelse hvis v-if-betingelsen er usann. 
+Kan brukes for flere graderte sjekker.
+
+v-else: Viser et element hvis ingen av de foregående v-if eller v-else-if-betingelsene er sanne. 
+v-else må alltid plasseres rett etter en v-if eller v-else-if.
+
+Eksempel:
+<div id="app">
+    <p v-if="mode === 'admin'">Velkommen, admin! Du har full tilgang.</p>
+    <p v-else-if="mode === 'user'">Velkommen, bruker! Du har begrenset tilgang.</p>
+    <p v-else>Velkommen, gjest! Logg inn for å få tilgang.</p>
+</div>
+
+
 v-show: Bruk dette når du trenger å vise/skjule et element uten å fjerne det fra DOM-en. 
 Elementet blir alltid rendert, men synligheten styres med CSS (display: none). 
 Dette er nyttig når du ofte vil bytte mellom å vise og skjule elementet.
