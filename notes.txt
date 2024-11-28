@@ -1,0 +1,7 @@
+v-show: Bruk dette når du trenger å vise/skjule et element uten å fjerne det fra DOM-en. 
+Elementet blir alltid rendert, men synligheten styres med CSS (display: none). 
+Dette er nyttig når du ofte vil bytte mellom å vise og skjule elementet.
+
+v-if: Bruk dette for elementer som kun skal rendres når en bestemt betingelse er sann. 
+Elementet fjernes og legges til i DOM-en dynamisk, 
+noe som kan være mer ytelseseffektivt for sjeldne visninger, men mindre egnet for hyppige endringer.
